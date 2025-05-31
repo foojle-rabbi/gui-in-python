@@ -1,0 +1,90 @@
+🔍 Expanded Topics in Tkinter
+🧱 1. Tkinter Basics
+    Tk() — main window
+
+    mainloop() — event loop
+
+    title(), geometry(), resizable()
+
+    Custom window icon
+
+    destroy(), quit()
+
+🎨 2. Widgets (UI Elements)
+You'll learn 15+ widgets like:
+
+    Label
+
+    Button
+
+    Entry
+
+    Text
+
+    Checkbutton
+
+    Radiobutton
+
+    Scale
+
+    Listbox
+
+    Combobox (from ttk)
+
+    Spinbox
+
+    Frame, Canvas, Menu
+
+    Message
+
+    Scrollbar
+
+    PanedWindow
+
+    Notebook (Tabs)
+
+🧭 3. Layout Management
+    pack(), grid(), place() — and when to use which
+
+    Nested layouts with Frames
+
+    Spacing, padding, alignment
+
+🧠 4. Events and Command Handling
+    command argument for buttons
+
+    bind() method for mouse & keyboard events
+
+    Input validation
+
+    Real-time updates to UI
+
+🧰 5. Advanced Features
+    Creating menus (Menu, menubar)
+
+    Tabs using Notebook
+
+    Drawing with Canvas
+
+    MessageBox (tkinter.messagebox)
+
+    File dialogs (askopenfilename, asksaveasfilename)
+
+    Styling with ttk.Style
+
+    Images using PhotoImage and PIL
+
+💡 6. Mini Projects
+To apply what you’ve learned:
+
+    Calculator
+
+    To-do app
+
+    Quiz game
+
+    Login/signup system
+
+    Weather app using APIs
+
+    Note-taking or text editor
