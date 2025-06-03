@@ -21,6 +21,8 @@ You'll learn 15+ widgets like:
 
     Text
 
+    Scrollbar
+
     Checkbutton
 
     Radiobutton
@@ -36,8 +38,6 @@ You'll learn 15+ widgets like:
     Frame, Canvas, Menu
 
     Message
-
-    Scrollbar
 
     PanedWindow
 
