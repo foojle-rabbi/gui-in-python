@@ -25,7 +25,7 @@ def on_click():
     # now as we got the url lets do our works
     
     # the saving path
-    download_folder = r"C:\Users\Fojle Rabbi\Downloads"
+    download_folder = r"C:\Users\Fojle Rabbi\Downloads\yt_dlp"
 
     # lefts first do some settings
     with yt_dlp.YoutubeDL({}) as ydl:
@@ -35,6 +35,11 @@ def on_click():
         
         ydl_opts = {
             'outtmpl': f"{download_folder}/{safe_title}.%(ext)s",  # use safe_title here
+            'quiet' : True,
+            'no_warnings': True,
+            'logger': None,
+            'progress': False,
+            'noprogress': True,
         }
 
     with yt_dlp.YoutubeDL(ydl_opts) as ydl:
