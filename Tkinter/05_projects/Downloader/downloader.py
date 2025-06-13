@@ -35,11 +35,11 @@ def on_click():
         
         ydl_opts = {
             'outtmpl': f"{download_folder}/{safe_title}.%(ext)s",  # use safe_title here
-            'quiet' : True,
-            'no_warnings': True,
-            'logger': None,
-            'progress': False,
-            'noprogress': True,
+            # 'quiet' : True,
+            # 'no_warnings': True,
+            # 'logger': None,
+            # 'progress': False,
+            # 'noprogress': True,
         }
 
     with yt_dlp.YoutubeDL(ydl_opts) as ydl:
