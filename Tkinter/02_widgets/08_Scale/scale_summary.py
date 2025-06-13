@@ -31,6 +31,18 @@ def show_info(val):
     # now lets show a warning if it goes higher than 75%
     if(val > 75):
         messagebox.showwarning("Warning", "Volume is High")
+# arrow key confirmations
+def on_left_click(event):
+    # print("Pressed <--")
+    val = int(scale_bar.get())
+    scale_bar.set(val-5)
+
+# now lets bind with the scale widget 
+def on_right_click(event):
+    # print("Pressed -->")
+    val = int(scale_bar.get())
+    scale_bar.set(val+5)
+    # Yes finally it succesed
 
 root = tk.Tk()
 root.title("Scale Widget summary")
@@ -46,5 +58,12 @@ scale_bar.set(50)
 # lets add a label to ge the idea
 label = tk.Label(root, text="Your scale is now on : 50%")
 label.pack()
+
+# lets try to bind arrow keys
+root.bind("<Right>", on_right_click)
+root.bind("<Left>", on_left_click)
+# Now lets also bind the up and down keys also
+root.bind("<Up>", on_right_click)
+root.bind("<Down>", on_left_click)
 
 root.mainloop()
